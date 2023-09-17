@@ -14,6 +14,6 @@ public class HelloWord {
 
 	@GetMapping("/hello-world")
 	public String greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return new String(template + name);
+		return new String("Hello " + name);
 	}
 }
